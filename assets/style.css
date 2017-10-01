@@ -151,6 +151,9 @@ nav a:hover .arrow {
 }
 .blurb {
 	padding-top: 10%;
+	font-size: .8em;
+	text-align: justify;
+	line-height: 1.8em;
 }
 @supports (grid-area: auto){
 .social {
@@ -254,195 +257,30 @@ nav a:hover .arrow {
 
 /* --------- section 2 Portfolio -------- */
 
-/* ++++ fallback ++++ */
-#portfolio {
-	display: inline;
-}
-.h-scroll {
-	border-bottom: 1px solid rgba(60, 161, 105, .5);
-}
-
-.projects {
-		position: static;
-		padding-top: 1px;
-		height: 60vh;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-}
-.project-image {
-		height: 50%;
-}
-
-.project-end {
-	display: none;
-}
-
-.description {
-		position: relative;
-		height: 50%;
-		color: black;
-		padding: 5px;
-		font-size: 20px;
-		min-width: 100%;
-		background-color: transparent;
-
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-}
-/* ---- fallback ---- */
-
-/* ++++ progressive enhancement ++++ */
-@supports (grid-area: auto){
-#portfolio {
-	background-color: rgba(95, 255, 167, .1);
-	padding: 5px;
-	border-bottom: 1px solid rgba(60, 161, 105, .5);
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	align-items: center;
-}
-
-.h-scroll {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	align-items: center;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
-	margin-left: 40px;
-	margin-right: 40px;
-	border: 3px solid rgba(20, 30, 20, .1);
-	height: 80vh;
-}
-
-.h-scroll::-webkit-scrollbar-track {
-	background-color: transparent;
-}
-.h-scroll::-webkit-scrollbar {
-	height: 26px;
-	background-color: transparent;
-}
-.h-scroll::-webkit-scrollbar-thumb {
-	border-radius: 20px;
-	border: 1px solid rgba(224, 88, 226, .7);
-}
-.h-scroll::-webkit-scrollbar-button {
-	width: 2em;
-	border-radius: 5px;
-}
-.h-scroll::-webkit-scrollbar-button:hover {
-	background-color: rgba(95, 255, 167, .4);
-}
-
-.projects {
-	margin: 5px;
-	border-radius: 15px;
-	position: relative;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 3vw;
-	height: 40vh;
-}
-
-.project-image {
-	height: 40vh;
-	-webkit-transition: filter .5s;
-	transition: filter .3s ease-in;
-}
-
-.project-end {
-	min-width: 50vw;
-	margin-left: 5vw;
-}
-.project-end p {
-	font-size: 2.6vmin;
-}
-
-.description {
-	/*text visible only on hover*/
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: opacity .6s, visibility .3s;
-	transition: opacity .6s, visibility .3s;
-
-	color: white;
-	padding: 15px;
-	font-size: 2.2vmin;
-	background-color: rgba(100, 100, 100, .2);
-
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+.portfolio-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.description a h3 {
-	text-transform: uppercase;
-	letter-spacing: .5vmin;
-}
-
-.description > p {
-	font-size: 2vmin;
-	font-weight: bold;
-	color: black;
-	margin: auto auto 2.5% auto;
-}
-
-.git-but {
-	font-size: 2.8vmin;
 	width: 50%;
-	border: 1px solid #eee;
-	padding: 4px;
-	border-radius: 10px;
+	height: 100%;
+	margin: auto;
+	justify-content: center;
 }
 
-.projects:hover .project-image {
-	filter: blur(30px);
+.portfolio-image img {
+	width: 100%;
+	border: 1px solid;
+	transition: .3s;
 }
 
-.projects:hover {
-	-webkit-box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
-	-moz-box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
-	box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
+.portfolio-btn {
+	font-size: 2em;
+	padding: 0 0 10px 0;
+	transition: .3s;
 }
 
-.projects:hover .description {
-	visibility: visible;
-	opacity: 1;
-}
+.portfolio-image img:hover, .portfolio-btn:hover {
+	border-radius: 20%;
+	background-color: #ddd;
 }
 
 /* --------- section 3 Experience -------- */
@@ -498,6 +336,10 @@ nav a:hover .arrow {
   	overflow: hidden;
 	animation-duration: .3s;
 	font-size: 3.5vmin;
+}
+
+.exp-info-music a {
+	color: #4286f4;
 }
 
 /* --------- section 4 About -------- */
@@ -686,6 +528,12 @@ footer p:nth-child(1) {
 footer p:nth-child(2) {
 	float: right;
 }
+footer a{
+	transition: .2s;
+}
+footer a:hover {
+	color: #4286f4;
+}
 
 /* --------- waypoints -------- */
 
@@ -713,82 +561,12 @@ footer p:nth-child(2) {
 	.name {
 		font-size: .7em;
 	}
+	.blurb {
+		font-size: .5em;
+	}
 
 	/*-----section 2 small-------*/
-	.h-scroll {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-	.projects {
-		position: static;
-		padding-top: 1px;
-		height: 60vh;
-		
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.project-image {
-		height: 50%;
-	}
-	.projects:hover {
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
-	}
-	.projects:hover .project-image {
-		filter: none;
-		transform: none;
-	}
-	.description {
-		position: relative;
-		height: 50%;
-		visibility: visible;
-		opacity: 1;
-		-webkit-transition: none;
-		transition: none;
-
-		color: black;
-		padding: 5px;
-		font-size: 15px;
-		min-width: 100%;
-		background-color: transparent;
-
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.description a h3 {
-		letter-spacing: .3vmin;
-	}
-	.description > p, .git-but {
-		font-size: 10px;
-	}
-	.git-but {
-		font-size: 15px;
-		border: 1px solid black;
-		width: 60%;
-	}
-	.description a p strong {
-		display: none;
-	}
-	.description a:first-child i {
-		font-weight: bold;
-		font-size: 19px;
-	}
-	.project-end p {
-		font-size: 12px;
-	}
+	
 
 	/*-----section 3 small-------*/
 	#experience .exp-info {
