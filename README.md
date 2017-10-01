@@ -1,5 +1,5 @@
-<h1><a href="https://syknapse.github.io/syk-background">Syk Houdeib Background page</a></h1>
-<h2>Portfolio Page</h2>
+<h1><a href="https://syknapse.github.io/syk-background">Syk Houdeib Background</a></h1>
+<h2>Background, experience and about me</h2>
 
 <a href="https://syknapse.github.io/Syk-Portfolio/"><img src="https://user-images.githubusercontent.com/29199184/29871605-b4c1ee38-8d8c-11e7-95a2-032e1dd39264.png"></a>
 <p>My first portfolio page. Created from scratch.</p>
