@@ -1,8 +1,7 @@
 <h1><a href="https://syknapse.github.io/syk-background">Syk Houdeib Background</a></h1>
 <h2>Background, experience and about me</h2>
 
-<a href="https://syknapse.github.io/syk-background"><img src="(https://user-images.githubusercontent.com/29199184/31144870-46f1e532-a882-11e7-8e95-5f793a205065.png"></a>
-<p>My first portfolio page. Created from scratch.</p>
+<a href="https://syknapse.github.io/syk-background"><img src="https://user-images.githubusercontent.com/29199184/31144870-46f1e532-a882-11e7-8e95-5f793a205065.png"></a>
 
 <h3>Technologies Used</h3>
 <ul>
